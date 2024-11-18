@@ -14,7 +14,6 @@ import java.util.Properties;
 public class EmailChecker {
     public static void check(String host, String storeType, String user,
                              String password) {
-        while (true) {
 
             try {
                 Properties properties = new Properties();
@@ -85,14 +84,13 @@ public class EmailChecker {
                 e.printStackTrace();
             }
         }
-    }
 
     public static void main(String[] args) {
 
         String host = "imap.mail.yahoo.com";// imap pentru yahoo
         String mailStoreType = "imap";
         String username = "hufel77@yahoo.com";
-        String password = "**************";
+        String password = "**************"; // yahoo app-pass setat din cont
 
         check(host, mailStoreType, username, password);
 
